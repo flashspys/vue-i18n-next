@@ -71,7 +71,7 @@ importers:
       textlint-rule-no-empty-section: ^1.1.0
       textlint-rule-no-start-duplicated-conjunction: ^2.0.2
       textlint-rule-no-surrogate-pair: ^1.0.1
-      textlint-rule-period-in-list-item: ^0.3.2
+      textlint-rule-period-in-list-item: ^1.0.0
       textlint-rule-stop-words: ^3.0.0
       textlint-rule-terminology: ^2.1.4
       textlint-rule-unexpanded-acronym: ^1.2.4
@@ -147,7 +147,7 @@ importers:
       textlint-rule-no-empty-section: 1.1.0
       textlint-rule-no-start-duplicated-conjunction: 2.0.2
       textlint-rule-no-surrogate-pair: 1.0.1
-      textlint-rule-period-in-list-item: 0.3.2
+      textlint-rule-period-in-list-item: 1.0.1
       textlint-rule-stop-words: 3.0.1
       textlint-rule-terminology: 2.1.6
       textlint-rule-unexpanded-acronym: 1.2.4
@@ -3701,15 +3701,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /array.prototype.find/2.2.0:
-    resolution: {integrity: sha512-sn40qmUiLYAcRb/1HsIQjTTZ1kCy8II8VtZJpMn2Aoen9twULhbWXisfh3HimGqMlHGUul0/TfKCnXg42LuPpQ==}
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
-      es-abstract: 1.20.1
-      es-shim-unscopables: 1.0.0
-    dev: true
-
   /arrify/1.0.1:
     resolution: {integrity: sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==}
     engines: {node: '>=0.10.0'}
@@ -4401,12 +4392,10 @@ packages:
     resolution: {integrity: sha1-wKHS86cJLgN3S/qD8UwPxXkKhmc=}
     dev: true
 
-  /check-ends-with-period/1.0.1:
-    resolution: {integrity: sha512-vhGWpphk52Q1CiU2YHpWhOOKyI1FMCVPfPO7X6M6fN60JbnzZCwnf9cgR+T4LDSZGCDd1mqzgCdIcffEFBrUFQ==}
+  /check-ends-with-period/3.0.2:
+    resolution: {integrity: sha512-/Bw+avucqqZ7PjKCVDod1QDGyZjo7Ht2701pdgcpTXzK5jI73/OUh3VR+m18jNUoJx5DSOUv0AxELZF7FYtcDA==}
     dependencies:
-      array.prototype.find: 2.2.0
-      emoji-regex: 6.5.1
-      end-with: 1.0.2
+      emoji-regex: 10.2.1
     dev: true
 
   /chokidar/2.1.8:
@@ -5338,8 +5327,8 @@ packages:
       '@emmetio/css-abbreviation': 2.1.4
     dev: true
 
-  /emoji-regex/6.5.1:
-    resolution: {integrity: sha512-PAHp6TxrCy7MGMFidro8uikr+zlJJKJ/Q6mm2ExZ7HwkyR9lSVFfE3kt36qcwa24BQL7y0G9axycGjK1A/0uNQ==}
+  /emoji-regex/10.2.1:
+    resolution: {integrity: sha512-97g6QgOk8zlDRdgq1WxwgTMgEWGVAQvB5Fdpgc1MkNy56la5SKP9GsMXKDOdqwn90/41a8yPwIGk1Y6WVbeMQA==}
     dev: true
 
   /emoji-regex/7.0.3:
@@ -5393,10 +5382,6 @@ packages:
     resolution: {integrity: sha512-+uw1inIHVPQoaVuHzRyXd21icM+cnt4CzD5rW+NC1wjOUSTOs+Te7FOv7AhN7vS9x/oIyhLP5PR1H+phQAHu5Q==}
     dependencies:
       once: 1.4.0
-    dev: true
-
-  /end-with/1.0.2:
-    resolution: {integrity: sha512-DA7B8EjHnFqKjIj8bUkw+HCVAJza1++3rV88sCUQ8aCyf8gvtl6SgFAJy0JwrOotWyx5Cdfmo3GkRobcBpYYcQ==}
     dev: true
 
   /enhanced-resolve/4.5.0:
@@ -5457,12 +5442,6 @@ packages:
       string.prototype.trimend: 1.0.5
       string.prototype.trimstart: 1.0.5
       unbox-primitive: 1.0.2
-    dev: true
-
-  /es-shim-unscopables/1.0.0:
-    resolution: {integrity: sha512-Jm6GPcCdC30eMLbZ2x8z2WuRwAws3zTBBKuusffYVUrNj/GVSUAZ+xKMaUpfNDR5IbyNA5LJbaecoUVbmUcB1w==}
-    dependencies:
-      has: 1.0.3
     dev: true
 
   /es-to-primitive/1.2.1:
@@ -12355,10 +12334,10 @@ packages:
     resolution: {integrity: sha512-YwdvoBzUh/xiHgiyEEIw1IdD1yjs2GGr2UlE2tAdIF5aiqOVEy/gKg79xKp0cPO8c4DOOObmKvKTgs9Zv1tlNA==}
     dev: true
 
-  /textlint-rule-period-in-list-item/0.3.2:
-    resolution: {integrity: sha512-47yQZ14SbNfyBGKcSV/89eXwxLlGIwj8WzbKk1jvDh/uPy59skVfFbWoF4tUn09mYnRyVldMsdqB0llYgQMLUA==}
+  /textlint-rule-period-in-list-item/1.0.1:
+    resolution: {integrity: sha512-dNPa4WzePcgsz8A+CxFGQgKNZCEvjjwMCu3DFcpYB4eKuhcSISEiS/mvEO42oGAALJluYdYVZxN3yMD6XzkLBA==}
     dependencies:
-      check-ends-with-period: 1.0.1
+      check-ends-with-period: 3.0.2
     dev: true
 
   /textlint-rule-stop-words/3.0.1:
